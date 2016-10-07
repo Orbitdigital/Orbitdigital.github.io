@@ -14,7 +14,7 @@ display: block;
 position: fixed;
 width: 94%;
 height: 12em;
-margin: 0 3% 3% 3%;
+margin: 2% 3% 3% 3%;
 padding: 0;
 
 }
@@ -30,7 +30,7 @@ padding: 0;
 
 h1 {
 color: #fff;
-font-size: 2.5em;
+font-size: 3.2em;
 font-weight: 600;
 animation-name: title;
 animation-duration: 4s;
@@ -57,7 +57,7 @@ font-family: helvetica, sans-serif;
 font-size: 4em;
 position: absolute;
 width: 90%;
-margin: 7em 5% 0 5%;
+margin: 5em 5% 0 5%;
 text-align: center;
 opacity: 0;
 animation-name: subheading;

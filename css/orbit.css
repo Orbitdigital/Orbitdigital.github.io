@@ -8,6 +8,11 @@ background-repeat: no-repeat;
 }
 
 
+@font-face{
+	font-family:"Effra Heavy";
+	src:url("http://www.myfontfree.com/data/541/e/effrastdhe/Effra_Std_He.ttf");
+}
+
 
 header {
 display: block;
@@ -30,12 +35,13 @@ padding: 0;
 
 h1 {
 color: #fff;
-font-size: 3.2em;
+font-family: helvetica, sans-serif;
+font-size: 4.5em;
 font-weight: 600;
 animation-name: title;
-animation-duration: 4s;
+animation-duration: 3s;
 animation-fill-mode: forwards;
-animation-delay: 3s;
+animation-delay: 2s;
 animation-iteration-count: 1;
 opacity: 0;
 text-shadow: 2px 2px 2px #888888;
@@ -54,17 +60,18 @@ padding-bottom: 15px;
 h2 {
 color: #fff;
 font-family: helvetica, sans-serif;
-font-size: 4em;
+font-size: 2.5em;
 position: absolute;
-width: 90%;
-margin: 5em 5% 0 5%;
+width: 75%;
+margin: 6em 12.5% 0 12.5%;
 text-align: center;
 opacity: 0;
 animation-name: subheading;
-animation-duration: 14s;
-animation-delay: 6s;
+animation-duration: 8s;
+animation-delay: 5s;
 animation-fill-mode: forwards;
 }
+
 
 
 #videolink {
@@ -141,6 +148,7 @@ padding-right: 1%;
 
 
 
+
 img {
 	max-width: 
 	100%
@@ -153,19 +161,18 @@ img {
 
 h1 {
 
-	font-size: 3.5em;
+	font-size: 3.8em;
 
 }
 
 
-#intro {
-   width: 60%;
-   margin: 8em 20% 0 20%;
-   font-size: 1.5em;
-}
+h2 {
+   width: 70%;
+   margin: 8em 15% 0 15%;
+   font-size: 2.5em;
 
+ }
 }
-
 
 
 /* Medium devices (desktops, 992px and up) */
@@ -177,7 +184,7 @@ h1 {
 }
 
 
-#intro {
+ {
 	font-size: 1.8em;
 	width: 80%;
     margin: 5em 10% 0 10%;
@@ -199,12 +206,6 @@ margin-top: 11em;
 
 
 
-
-h1 {
-
-	font-size: 5em;
-
-}
 
 #intro {
 	font-size: 2.5em;

@@ -29,7 +29,7 @@ padding: 0;
 
 
 h1 {
-color: #dcd9d9;
+color: #fff;
 font-size: 2.5em;
 font-weight: 600;
 animation-name: title;
@@ -51,20 +51,19 @@ padding-bottom: 15px;
 }
 
 
-#intro {
-color: #dcd9d9;
+h2 {
+color: #fff;
 font-family: helvetica, sans-serif;
-font-size: 1.4em;
+font-size: 4em;
 position: absolute;
 width: 90%;
-margin: 9em 5% 0 5%;
+margin: 7em 5% 0 5%;
 text-align: center;
 opacity: 0;
 animation-name: subheading;
 animation-duration: 14s;
 animation-delay: 6s;
-
-
+animation-fill-mode: forwards;
 }
 
 

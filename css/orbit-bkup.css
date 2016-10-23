@@ -1,8 +1,12 @@
 
-body {
-padding: 0;
-margin: 0;	
+
+
+html {
+background: url('http://orbitdigital.github.io/images/cityscape-banner.jpg') center center fixed;
+background-size: cover;
+background-repeat: no-repeat;
 }
+
 
 .container {
 position: fixed;
@@ -43,11 +47,12 @@ margin: 0.25% 0.25% 0.25% 0.25%;
 
 
 header {
-width: 100%;
-height: 40em;
-outline: 1px dotted #fff;
-background: url('http://orbitdigital.github.io/images/cityscape-banner.jpg')center center fixed;
-background-repeat: no-repeat;
+display: block;
+position: fixed;
+width: 92%;
+height: 21em;
+margin: 2% 4% 3% 4%;
+padding: 0;
 }
 
 

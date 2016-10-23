@@ -1,0 +1,24 @@
+Creating Web pages using GITHUB
+
+1. Create file folder for your site on your local machine
+2. Open command line and CD to your folder directory
+3. Use 'git init' to create a GIT repository on your local machine for your chosen directory
+4. Use 'git status' to check that files have been added to your GIT repository on your local machine.
+5. Use 'git add .' to add your files to your LOCAL GIT repository.
+6. Use 'git commit -m 'initial commit' to commit your files to the LOCAL GIT repository.
+7. Create a new repository in GIT
+8. Copy the code from the 'push an existing repository from the command line', for example, "git remote add origin https://github.com/Orbitdigital/site.github.io.git
+git push -u origin master"
+
+You can also change 'origin' to 'git' in the above code if you have already created an 'origin' directory
+
+Making Changes to files in your directory and pushing live:
+
+1. Update the files in your local directory on your local machine
+2. Run 'git status' to check that files have been updated.
+3. Run 'git add .'
+4. Run 'git commit -m 'update details' to commit the changes to your local GIT repository
+5. Run 'git push origin master' to push the changes from local GIT repository to GITHUB server repository.
+
+Note: You can also use 'git' instead of 'origin' in  the above code if already created a master repository.
+pouspus

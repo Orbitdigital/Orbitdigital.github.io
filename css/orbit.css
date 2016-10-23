@@ -21,7 +21,6 @@ width: 92%;
 height: 23em;
 margin: 3% 4% 3% 4%;
 padding: 0;
-outline: 1px dotted #fff;
 }
 
 
@@ -208,7 +207,7 @@ h1 {
 
 h2 {
 width: 90%;
-margin: 5.5em 5% 0 5%;
+margin: 4.5em 5% 0 5%;
 font-size: 1.9em;
  }
 

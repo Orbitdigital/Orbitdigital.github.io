@@ -6,83 +6,120 @@ margin: 0;
 
 .container {
 position: fixed;
-width: 98%;
-height: 97%;
-outline: 1px dotted #fff;
-margin: 0.25% 0.25% 0.25% 0.25%;
+width: 100%;
+height: 98%;
+margin: 0;
+padding: 0;
+z-index: 1;
+background: url('http://orbitdigital.github.io/images/cityscape-banner.jpg') fixed;
+background-repeat: no-repeat;
+-webkit-filter: grayscale(40%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+ }
 }
-
-
-@font-face{
-	font-family:"Effra Heavy";
-	src:url("http://www.myfontfree.com/data/541/e/effrastdhe/Effra_Std_He.ttf");
-}
-
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.eot?#iefix") format("embedded-opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.otf") format("opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.woff") format("woff"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.ttf") format("truetype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.svg#HelveticaNeue-Thin") format("svg");
-  font-weight: 100;
-  font-style: normal; }
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.eot?#iefix") format("embedded-opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.otf") format("opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.woff") format("woff"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.ttf") format("truetype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.svg#HelveticaNeue-Light") format("svg");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.otf") format("opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.woff") format("woff"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.ttf") format("truetype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.svg#HelveticaNeue") format("svg");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.otf") format("opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.woff") format("woff"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("Hhttp://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
-  font-weight: 700;
-  font-style: normal; }
-
 
 
 header {
-width: 100%;
-height: 40em;
-outline: 1px dotted #fff;
-background: url('http://orbitdigital.github.io/images/cityscape-banner.jpg')center center fixed;
-background-repeat: no-repeat;
-}
-
-
-
-.mainbody {
-width: 85%;
-height: 50%;
-outline: 1px dotted #fff;
-margin: 26em 7.5% 0 7.5%;
 display: block;
 position: fixed;
+width: 100%;
+height: 35em;
+padding: 0;
+    z-index: 3;
 }
 
-.mainbody ul {
-display: inline-block;
+.mainbody {
+width: 75%;
+height: 40%;
+display: block;
 position: fixed;
-height: 45%;
-width: 21%;
-outline: 1px dotted #fff;
-opacity: 1;
+margin: 20% 12.5% 0 12.5%;
+outline: 2px dotted #fff;
 }
+
+ul {
+display: inline-block;
+position: relative;
+height: 85%;
+width: 20%;
+outline: 2px dotted #fff;
+opacity: 0.9;
+border-radius: 50%;
+background: #b58d5a;
+margin-right: 2%;
+float: left;
+z-index: 2;
+
+}
+
+#firstbubble {
+opacity: 0;
+animation-name: bubble;
+animation-fill-mode: forwards;
+animation-delay: 4s;
+animation-iteration-count: 1;	
+}
+
+#secondbubble {
+opacity: 0;
+animation-name: bubble;
+animation-fill-mode: forwards;
+animation-delay: 5s;
+animation-iteration-count: 1;
+background: #685b44;	
+}
+
+#thirdbubble {
+opacity: 0;
+animation-name: bubble;
+animation-fill-mode: forwards;
+animation-delay: 6s;
+animation-iteration-count: 1;
+}
+
+#fourthbubble {
+opacity: 0;
+animation-name: bubble;
+animation-fill-mode: forwards;
+animation-delay: 7s;
+animation-iteration-count: 1;
+background: #685b44;
+}
+
+
+@keyframes bubble {
+	0% {opacity: 0;}
+	25% {opacity: 1;}
+	50% {opacity: 1;}
+	75% {opacity: 1;}
+	100% {opacity: 0.9;}
+}
+
+
+ul li {
+color: #fff;
+font-size: 1.6em;
+position: relative;
+margin: 34% 16% 15% 0%;
+width: 87%;
+list-style-type: none;
+text-align: center;
+font-family: 'HelveticaNeue';
+text-transform: uppercase;
+font-weight: bold;
+z-index: 4;
+
+}	
 
 
 
 h1 {
 color: #fff;
 font-family: 'HelveticaNeue';
-font-size: 4.5em;
+font-size: 4em;
 font-weight: 600;
-animation-name: title;
-animation-duration: 3s;
-animation-fill-mode: forwards;
-animation-delay: 2s;
-animation-iteration-count: 1;
-opacity: 0;
+
+opacity: 1;
 text-shadow: 2px 2px 2px #888888;
 position: absolute;
 width: 100%;
@@ -90,22 +127,21 @@ z-index: 4;
 line-height: 120%;
 text-align: center;
 padding-bottom: 15px;
-
 }
 
 
 h2 {
 color: #fff;
 font-family: helvetica, sans-serif;
-font-size: 2.5em;
+font-size: 2.2em;
 position: absolute;
-width: 75%;
-margin: 5.5em 12.5% 0 12.5%;
+width: 70%;
+margin: 6em 15% 0 15%;
 text-align: center;
 opacity: 0;
 animation-name: subheading;
 animation-duration: 8s;
-animation-delay: 5s;
+animation-delay: 2s;
 animation-fill-mode: forwards;
 }
 
@@ -142,16 +178,6 @@ height: auto;
 margin-left: 15%;
 margin-right: 15%;
 margin-top: 9em;
-}
-
-
-@keyframes video {
-from {opacity: 0;}
-to {opacity: 1;}
-
-from {transform: scale(0.5);}
-to {transform: scale(0.95);}
-
 }
 
 
@@ -196,14 +222,9 @@ img {
 @media (min-width: 992px) and (max-width: 1199.99px)  { 
 
 h1 {
-	font-size: 4.2em;
+	font-size: 3.9em;
 }
 
-
-
-#videocontainer {
-margin-top: 11em;
-  }
 } 
 
 
@@ -213,13 +234,11 @@ margin-top: 11em;
 
 
 header {
-
-margin: 7% 3% 3% 3%;
-	
 }
 
 h1 { 
 	font-size: 3.8em;
+		margin-top: 5%;
 }
 
 
@@ -237,11 +256,11 @@ text-align: center;
 @media (max-width: 768px) {
 
 header {
-margin: 10% 4% 3% 4%;	
 }
 
 h1 { 
 	font-size: 2.8em;
+		margin-top: 5%;
 }
 
 
@@ -259,12 +278,12 @@ font-size: 1.9em;
 
 @media (max-width: 768px) and (orientation : landscape) {
 
-header {
-margin: 2% 4% 3% 4%;	
+header {	
 }
 
 h1 { 
 	font-size: 2.8em;
+	margin-top: 5%;
 }
 
 
@@ -278,6 +297,32 @@ font-size: 1.9em;
 }
 
 
+@font-face{
+	font-family:"Effra Heavy";
+	src:url("http://www.myfontfree.com/data/541/e/effrastdhe/Effra_Std_He.ttf");
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.eot?#iefix") format("embedded-opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.otf") format("opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.woff") format("woff"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.ttf") format("truetype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.svg#HelveticaNeue-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.eot?#iefix") format("embedded-opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.otf") format("opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.woff") format("woff"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.ttf") format("truetype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.svg#HelveticaNeue-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.otf") format("opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.woff") format("woff"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.ttf") format("truetype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.otf") format("opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.woff") format("woff"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("Hhttp://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
 
 
 

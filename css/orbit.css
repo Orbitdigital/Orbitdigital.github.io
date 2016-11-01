@@ -1,63 +1,188 @@
 
+
+/* Body */
+
+
 body {
 padding: 0;
-margin: 0;	
+margin: 0;
+width: 100%;
+height: 100%;	
 }
+
+/* Image Max Responsive*/
+
+img {
+	max-width: 
+	100%
+}
+
+
+/* Headings */
+
+h1 {
+color: #fff;
+font-family: helvetica, sans-serif;
+font-size: 3.8em;
+font-weight: 600;
+margin-top: 1.5em;
+opacity: 1;
+text-shadow: 2px 2px 2px #888888;
+position: absolute;
+width: 100%;
+z-index: 4;
+line-height: 120%;
+text-align: center;
+padding-bottom: 15px;
+}
+
+
+h2 {
+color: #fff;
+font-family: helvetica, sans-serif;
+font-size: 2.2em;
+position: absolute;
+width: 88%;
+margin: 6em 6% 0 6%;
+text-align: center;
+opacity: 0;
+animation-name: subheading;
+animation-duration: 8s;
+animation-delay: 2s;
+animation-fill-mode: forwards;
+}
+
+
+
+h3 {
+color: #fff;
+font-family: helvetica, sans-serif;
+font-size: 2.2em;
+}
+
+
+/* H2 Animation*/
+
+
+@keyframes subheading {
+	0% {opacity: 0;}
+	25% {opacity: 1;}
+	50% {opacity: 1;}
+	75% {opacity: 1;}
+	100% {opacity: 1;}
+}
+
+
+
+/*Outer Container*/
 
 .container {
-position: fixed;
+position: absolute;
 width: 100%;
-height: 98%;
-margin: 0;
-padding: 0;
+height: 100%;
+margin: 0 0 0 0%;
+padding: 0 0 0 0%;
 z-index: 1;
-background: url('http://orbitdigital.github.io/images/cityscape-banner.jpg') fixed;
+background: url('http://orbitdigital.github.io/images/cityscape-banner.jpg') center center fixed;
 background-repeat: no-repeat;
--webkit-filter: grayscale(40%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(50%);
- }
-}
+-webkit-filter: grayscale(45%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(45%);
 
+ }
+
+/*file:///Users/andrewg/Desktop/cityscape-banner.jpg
+*/
+
+
+
+/*Header*/
 
 header {
 display: block;
-position: fixed;
-width: 100%;
-height: 35em;
-padding: 0;
+position: relative;
+width: 82%;
+height: 40%;
     z-index: 3;
+outline: 1px dotted #fff;
+    margin: 1.5% 9% 2% 9%;
 }
+
+
+/*Main Content Area*/
+
+main {
+display: block;
+position: relative;
+width: 85%;
+height: 45%;
+    z-index: 3;
+    margin: 2% 7% 2% 9%;
+    outline: 1px dotted #fff;	
+}
+
+
+/*Circle Content*/
+
+
+
+/*Circle Content Containers (one for each circle )*/
 
 .mainbody {
-width: 75%;
-height: 40%;
-display: block;
-position: fixed;
-margin: 20% 12.5% 0 12.5%;
-outline: 2px dotted #fff;
-}
-
-ul {
+width: 23%;
+height: 88%;
 display: inline-block;
 position: relative;
-height: 85%;
-width: 20%;
-outline: 2px dotted #fff;
+margin: 0% 0% 0% 1%;
+z-index: 4;
+outline: 1px dotted #fff;
+}
+
+
+/*Circle*/
+
+ul {
+position: relative;
+height: 0%;
+width: 80%;
 opacity: 0.9;
 border-radius: 50%;
+-moz-border-radius: 50%; 
+    -webkit-border-radius: 50%;
 background: #b58d5a;
-margin-right: 2%;
 float: left;
 z-index: 2;
+padding-bottom: 88%;
+margin-left: 1%;
+outline: 1px dotted #fff;
+}
+
+/*Circle Text*/
+
+ul li {
+color: #fff;
+font-size: 1.5em;
+position: relative;
+margin: 34% 17% 0% 0%;
+width: 87%;
+list-style-type: none;
+text-align: center;
+font-family: helvetica, sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+z-index: 4;
 
 }
+
+
+
+/*Circle ID's & Circle Animation*/
 
 #firstbubble {
 opacity: 0;
 animation-name: bubble;
 animation-fill-mode: forwards;
 animation-delay: 4s;
-animation-iteration-count: 1;	
+animation-iteration-count: 1;
 }
 
 #secondbubble {
@@ -87,6 +212,8 @@ background: #685b44;
 }
 
 
+/*Circle Animation*/
+
 @keyframes bubble {
 	0% {opacity: 0;}
 	25% {opacity: 1;}
@@ -96,187 +223,321 @@ background: #685b44;
 }
 
 
-ul li {
-color: #fff;
-font-size: 1.6em;
-position: relative;
-margin: 34% 16% 15% 0%;
-width: 87%;
-list-style-type: none;
-text-align: center;
-font-family: 'HelveticaNeue';
-text-transform: uppercase;
-font-weight: bold;
-z-index: 4;
 
+
+
+/*Responsive Media Queries*/
+
+
+/* Large devices (LD) (desktops, 1100px and up) */
+@media (min-width: 1200px) and (max-width: 1500px)  { 
+
+h1 {
+	font-size: 3.6em;
+}
+
+h2 {
+font-size: 2em; 
+}
+
+
+main {
+display: block;
+position: relative;
+width: 94%;
+height: 45%;
+    z-index: 3;
+ outline: 2px dotted #fff;
+    margin: 2% 3% 2% 3%;	
+}
+
+ul li {
+font-size: 1.4em;
+width: 84%;
 }	
 
 
-
-h1 {
-color: #fff;
-font-family: 'HelveticaNeue';
-font-size: 4em;
-font-weight: 600;
-
-opacity: 1;
-text-shadow: 2px 2px 2px #888888;
-position: absolute;
-width: 100%;
-z-index: 4;
-line-height: 120%;
-text-align: center;
-padding-bottom: 15px;
-}
-
-
-h2 {
-color: #fff;
-font-family: helvetica, sans-serif;
-font-size: 2.2em;
-position: absolute;
-width: 70%;
-margin: 6em 15% 0 15%;
-text-align: center;
-opacity: 0;
-animation-name: subheading;
-animation-duration: 8s;
-animation-delay: 2s;
-animation-fill-mode: forwards;
-}
-
-
-
-#videolink {
-display: none;
-text-decoration: underline;
-cursor: pointer;
-}
-
-
-
-@keyframes subheading {
-	0% {opacity: 0;}
-	25% {opacity: 1;}
-	50% {opacity: 1;}
-	75% {opacity: 1;}
-	100% {opacity: 1;}
-}
-
-
-
-#videocontainer {
-display: block;
-animation-name: video;
-animation-duration: 3s;
-opacity: 0;
-animation-fill-mode: forwards;
-animation-delay: 18s;
-position: fixed;
-width: 70%;
-height: auto;
-margin-left: 15%;
-margin-right: 15%;
-margin-top: 9em;
-}
-
-
-
-
-#close {
-display: block;
-position: absolute;
-z-index: 5;
-font-size: 1.1em;
-color: #fff;
-left: 93%;
-top: 5%;
-font-family: arial;
-cursor: pointer;
-padding-right: 1%;
-}
-
-
-
-
-
-
-@keyframes title {
-	from {opacity: 0;}
-	to {opacity: 1;}
-
-	from {transform: scale(0.70);}
-	to {transform: scale(1);}
-}
-
-
-
-
-img {
-	max-width: 
-	100%
-}
-
-
-/* Large devices (LD) (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.99px)  { 
-
-h1 {
-	font-size: 3.9em;
-}
-
+.mainbody {
+width: 23.5%;
+margin: 0em 0% 0% 1%;
+ }
 } 
 
 
 
-/* Medium devices (MD) (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.99px)  {
+/* Medium devices (MD) (tablets devices 768px and up) */
+@media (min-width: 768px) and (max-width: 1199.99px)  {
 
 
 header {
+height: 28%;
+width: 90%;
 }
 
 h1 { 
-	font-size: 3.8em;
+	font-size: 3em;
 		margin-top: 5%;
 }
 
 
 h2 {
-margin: 5em 7.5% 0 7.5%;
-font-size: 2.5em;
-width: 85%;
+margin: 6em 7.5% 0 7.5%;
+font-size: 1.7em;
+width: 90%;
 text-align: center;
+ }
+
+ main {
+display: block;
+position: relative;
+width: 65%;
+height: 62%;
+    z-index: 3;
+    margin: 2% 15% 2% 19%;
+    outline: 1px dotted #fff;	
+}
+
+
+.mainbody {
+width: 38%;
+height: 49%;
+display: inline-block;
+position: relative;
+margin: 0em 0% 2% 8%;
+outline: 2px dotted #fff;
+z-index: 4;
+float: none;
+}
+
+
+ul li {
+font-size: 1.2em;
+width: 78%;
+margin: 35% 17% 0% 0%;
  }
 }
 
 
-/* Small devices (SM) (Maximum width 768px) */
 
-@media (max-width: 768px) {
+
+/* Medium devices (MD) (tablets devices 768px and up) */
+@media (min-width: 768px) and (max-width: 969.99px)  {
+
 
 header {
+height: 30%;
 }
 
 h1 { 
-	font-size: 2.8em;
-		margin-top: 5%;
+	font-size: 2.9em;
+		margin-top: 8%;
 }
 
 
 h2 {
 width: 90%;
-margin: 4.5em 5% 0 5%;
-font-size: 1.9em;
+margin: 6em 5% 0 5%;
+font-size: 1.6em;
+ }
+
+
+
+ul li {
+font-size: 1.1em;
+width: 78%;
+margin: 35% 17% 0% 0%;
+ }
+
+
+
+ main {
+display: block;
+position: relative;
+width: 70%;
+height: 58%;
+    z-index: 3;
+    margin: 2% 15% 2% 15%;
+    outline: 1px dotted #fff;	
+}
+
+.mainbody {
+width: 40%;
+height: 40%;
+display: inline-block;
+position: relative;
+margin: 0em 0% 5% 8%;
+outline: 2px dotted #fff;
+z-index: 4;
+float: none;
+}
+
+
+}
+
+
+
+/* Small devices (SM) (Maximum width 768px) */
+
+/* Medium devices (MD) (tablets devices 768px and up) */
+@media (min-width: 500px) and (max-width: 767.99px)  {
+
+
+header {
+height: 25%;
+width: 90%;
+ margin: 1.5% 5% 2% 5%;
+}
+
+h1 { 
+	font-size: 2.1em;
+		margin-top: 8%;
+}
+
+
+h2 {
+width: 90%;
+margin: 6em 5% 0 5%;
+font-size: 1.2em;
+ }
+
+
+
+ul li {
+font-size: 0.8em;
+width: 77%;
+margin: 38% 17% 0% 0%;
+ }
+
+
+
+main {
+display: block;
+position: relative;
+width: 82%;
+height: 60%;
+    z-index: 3;
+    margin: 2% 15% 2% 10%;
+    outline: 1px dotted #fff;	
+}
+
+.mainbody {
+width: 43%;
+height: 49%;
+display: inline-block;
+position: relative;
+margin: 0em 2% 1% 4%;
+outline: 2px dotted #fff;
+z-index: 4;
+float: none;
+ }
+
+}
+
+
+
+/* Small devices (SM) (Landscape View) */
+
+@media (max-width: 499.99px) {
+
+header {
+height: 25%;
+width: 90%;
+ margin: 1.5% 5% 2% 5%;
+}
+
+h1 { 
+	font-size: 2.1em;
+		margin-top: 6%;
+}
+
+
+h2 {
+width: 90%;
+margin: 4em 5% 0 5%;
+font-size: 1.2em;
+ }
+
+
+ul {
+position: relative;
+height: 0%;
+width: 75%;
+opacity: 0.9;
+border-radius: 50%;
+-moz-border-radius: 50%; 
+    -webkit-border-radius: 50%;
+background: #b58d5a;
+float: left;
+z-index: 2;
+padding-bottom: 90%;
+margin-left: 0%;
+outline: 1px dotted #fff;
+}
+
+
+ul li {
+font-size: 0.7em;
+width: 70%;
+margin: 40% 17% 0% 0%;
+ }
+
+
+
+main {
+display: block;
+position: relative;
+width: 95%;
+height: 65%;
+    z-index: 3;
+    margin: 5% 2.5% 2% 2.5%;
+    outline: 1px dotted #fff;	
+}
+
+.mainbody {
+width: 45%;
+height: 43%;
+display: inline-block;
+position: relative;
+margin: 0em 1% 1% 3%;
+outline: 2px dotted #fff;
+z-index: 4;
+float: none;
+ }
+}
+
+
+@media (max-width: 370px) {
+
+
+h1 { 
+	font-size: 1.6em;
+		margin-top: 8%;
+}
+
+
+h2 {
+width: 90%;
+margin: 5em 5% 0 5%;
+font-size: 0.9em;
+ }
+
+
+ul li {
+font-size: 0.5em;
+width: 65%;
+margin: 48% 17% 0% 0%;
  }
 
 
 }
 
 
+
+
+
 /* Small devices (SM) (Landscape View) */
 
-@media (max-width: 768px) and (orientation : landscape) {
+@media (max-width: 550px) and (orientation : landscape) {
 
 header {	
 }
@@ -297,32 +558,11 @@ font-size: 1.9em;
 }
 
 
-@font-face{
-	font-family:"Effra Heavy";
-	src:url("http://www.myfontfree.com/data/541/e/effrastdhe/Effra_Std_He.ttf");
-}
 
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.eot?#iefix") format("embedded-opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.otf") format("opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.woff") format("woff"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.ttf") format("truetype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Thin.svg#HelveticaNeue-Thin") format("svg");
-  font-weight: 100;
-  font-style: normal; }
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.eot?#iefix") format("embedded-opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.otf") format("opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.woff") format("woff"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.ttf") format("truetype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Light.svg#HelveticaNeue-Light") format("svg");
-  font-weight: 300;
-  font-style: normal; }
 
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.otf") format("opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.woff") format("woff"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.ttf") format("truetype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue.svg#HelveticaNeue") format("svg");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.otf") format("opentype"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.woff") format("woff"), url("http://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("Hhttp://adelphi.digital/assets/adelphi/fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
-  font-weight: 700;
-  font-style: normal; }
+
+
+
 
 
 

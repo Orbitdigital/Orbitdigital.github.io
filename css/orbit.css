@@ -452,7 +452,7 @@ h1 {
 
 
 h2 {
-width: 90%;
+width: 95%;
 margin: 4em 5% 0 5%;
 font-size: 1.2em;
  }
@@ -489,7 +489,7 @@ position: relative;
 width: 95%;
 height: 65%;
     z-index: 3;
-    margin: 7% 2.5% 2% 2.5%;
+    margin: 8% 2.5% 2% 2.5%;
     outline: 1px dotted #fff;	
 }
 

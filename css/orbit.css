@@ -545,7 +545,7 @@ h1 {
 h2 {
 width: 95%;
 margin: 4em 5% 0 5%;
-font-size: 1.2em;
+font-size: 1.3em;
  }
 
 
@@ -560,14 +560,14 @@ border-radius: 50%;
 background: #b58d5a;
 float: left;
 z-index: 2;
-padding-bottom: 92%;
+padding-bottom: 94%;
 margin-left: 0%;
 }
 
 
 ul li {
 font-size: 0.6em;
-width: 67%;
+width: 66%;
 margin: 42% 17% 0% 0%;
  }
 

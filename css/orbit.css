@@ -116,12 +116,11 @@ width: 85%;
 height: 45%;
     z-index: 3;
     margin: 2% 7% 2% 9%;
-  	
+    	
 }
 
 
 /*Circle Content*/
-
 
 
 /*Circle Content Containers (one for each circle )*/
@@ -561,7 +560,7 @@ border-radius: 50%;
 background: #b58d5a;
 float: left;
 z-index: 2;
-padding-bottom: 85%;
+padding-bottom: 92%;
 margin-left: 0%;
 }
 

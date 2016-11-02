@@ -603,13 +603,13 @@ float: left;
 @media (max-width: 568.99px) and (orientation : landscape) {
 
 header {
-height: 30%;
+height: 33%;
 width: 90%;
  margin: 1.5% 5% 2% 5%;
 }
 
 h1 { 
-	font-size: 1.5em;
+	font-size: 1.6em;
 		margin-top: 3%;
 }
 
@@ -617,7 +617,7 @@ h1 {
 h2 {
 width: 95%;
 margin: 3em 5% 0 5%;
-font-size: 1em;
+font-size: 1.1em;
  }
 
 
